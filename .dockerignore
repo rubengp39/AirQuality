@@ -1,0 +1,6 @@
+.git
+*.pdf
+README.*
+resources
+_config.yml
+zdocs/
