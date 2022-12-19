@@ -5,6 +5,8 @@ import sys
 from device_provisioning_service import Device
 from sensor import Sensor
 import os
+import email_sender as es
+from datetime import datetime
 
 import ptvsd
 ptvsd.enable_attach(address=('0.0.0.0', 5678))
@@ -15,6 +17,7 @@ async def main():
     scopeID = None
     deviceId = None
     key = None
+    email_sent_today = datetime.today()
 
     scopeID = os.getenv('SCOPE_ID')
     deviceId = os.getenv('DEVICE_ID')
@@ -49,8 +52,11 @@ async def main():
 
                 print(telemetry)
                 data = json.dumps(telemetry)
-                if data['pm1'] > 10 | data['pm25'] > 10 | data['pm10'] > 10:
-                    pass
+                if email_sent_today != datetime.today():
+                    if data['pm1'] > 10 | data['pm25'] > 10 | data['pm10'] > 10:
+                        es.sendEmail(es.smtpHost, es.smtpPort, es.mailUname, es.mailPwd, es.fromEmail,
+            es.mailSubject, es.mailContentHtml, es.recepientsMailList, )
+                    email_sent_today = datetime.today()
 
                 await device_client.send_message(data)
 

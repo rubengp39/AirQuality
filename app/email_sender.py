@@ -40,15 +40,15 @@ def sendEmail(smtpHost, smtpPort, mailUname, mailPwd, fromEmail, mailSubject, ma
 # mail server parameters
 smtpHost = "smtp.gmail.com"
 smtpPort = 587
-mailUname = 'senderemail@gmail.com'
-mailPwd = 'ehqpsvygwbmujclq'
-fromEmail = 'senderemail@gmail.com'
+mailUname = 'airqualitydeustoiot@gmail.com'
+mailPwd = 'sydgkirwiwuhojkb'
+fromEmail = 'rubengp39@gmail.com'
 
 # mail body, recepients, attachment files
-mailSubject = "test subject"
+mailSubject = "Dangerous Air Quality Detected"
 mailContentHtml = "Hi, Hope u are fine. <br/> This is a <b>test</b> mail from python script using an awesome library called <b>smtplib</b>"
-recepientsMailList = ["receiveremail@gmail.com"]
-attachmentFpaths = ["smtp.png", "poster.png"]
+recepientsMailList = ['rubengp39@gmail.com']
+attachmentFpaths = []
 sendEmail(smtpHost, smtpPort, mailUname, mailPwd, fromEmail,
           mailSubject, mailContentHtml, recepientsMailList, attachmentFpaths)
 
