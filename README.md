@@ -2,6 +2,7 @@
 
 Using RaspberryPI, Enviro+ & Azure IOT Central
 
+# [Wiki](https://github.com/rubengp39/AirQuality-Raspi/wiki)
 ### References :
 [Azure IOT Central](https://airquality-raspi.azureiotcentral.com/)
 
