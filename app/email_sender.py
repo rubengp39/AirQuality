@@ -46,7 +46,7 @@ fromEmail = 'rubengp39@gmail.com'
 
 # mail body, recepients, attachment files
 mailSubject = "Dangerous Air Quality Detected"
-mailContentHtml = "Hi, Hope u are fine. <br/> This is a <b>test</b> mail from python script using an awesome library called <b>smtplib</b>"
+mailContentHtml = "Hi, Hope u are fine. <br/> This is a notification about the air quality in your area."
 recepientsMailList = ['rubengp39@gmail.com']
 attachmentFpaths = []
 sendEmail(smtpHost, smtpPort, mailUname, mailPwd, fromEmail,
