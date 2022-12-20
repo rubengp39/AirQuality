@@ -1,13 +1,12 @@
-# AirQuality
+# AirQuality monitoring and prediciton
 
-LINKS :
+Using RaspberryPI, Enviro+ & Azure IOT Central
 
-https://airquality-raspi.azureiotcentral.com/
+### References :
+[Azure IOT Central](https://airquality-raspi.azureiotcentral.com/)
 
-https://github.com/gloveboxes/Raspberry-Pi-Python-Environment-Monitor-with-the-Pimoroni-Enviro-Air-Quality-PMS5003-Sensor/blob/master/zdocs/module_1_create_iot_hub/README.md
+[Enviro+](https://www.digikey.com/en/maker/projects/getting-started-with-enviro/ea86290a52eb48da8b150d39a17c2eef)
 
-https://developer.tomtom.com/traffic-api/documentation/traffic-flow/traffic-flow-service
+[RaspberryPI](https://www.raspberrypi.org)
 
-WEATHER API:
-https://www.weatherapi.com/api-explorer.aspx
- API KEY : 3817edbde7fd4412a26182206221312
+[Weather API](https://www.weatherapi.com/api-explorer.aspx)
